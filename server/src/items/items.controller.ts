@@ -2,7 +2,7 @@ import { Controller, Get, Query } from '@nestjs/common';
 import { Item } from './models/item.model.js';
 import { ItemsService } from './items.service.js';
 
-@Controller('items')
+@Controller('api/items')
 export class ItemsController {
   constructor(private readonly itemsService: ItemsService) {}
 
