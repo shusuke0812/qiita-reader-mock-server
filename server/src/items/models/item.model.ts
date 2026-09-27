@@ -4,6 +4,7 @@ export interface ItemTag {
 
 export interface ItemUser {
   id: string;
+  name: string;
   profile_image_url: string;
 }
 
@@ -13,6 +14,5 @@ export interface Item {
   tags: ItemTag[];
   title: string;
   updated_at: string;
-  url: string;
   user: ItemUser;
 }

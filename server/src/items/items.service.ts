@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
-import { MOCK_ITEMS } from './mocks/items.mock';
-import { Item } from './models/items.model';
-import { ItemTag } from './models/items.model.js';
+import { MOCK_ITEMS } from './mocks/items.mock.js';
+import { Item } from './models/item.model.js';
+import { ItemTag } from './models/item.model.js';
 
 @Injectable()
 export class ItemsService {
@@ -11,7 +11,7 @@ export class ItemsService {
       ? MOCK_ITEMS.filter((item: Item) => {
         const titleMatched = item.title
           .toLocaleLowerCase()
-          .incledes(normalizedQuery);
+          .includes(normalizedQuery);
         const tagMatches = item.tags.some((tag: ItemTag) =>
           tag.name.toLocaleLowerCase().includes(normalizedQuery),
         );
