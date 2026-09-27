@@ -14,5 +14,6 @@ export interface Item {
   tags: ItemTag[];
   title: string;
   updated_at: string;
+  url: string;
   user: ItemUser;
 }

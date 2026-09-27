@@ -11,6 +11,7 @@ export const MOCK_ITEMS: Item[] = [
       ],
       "title": "Example title",
       "updated_at": "2000-01-01T00:00:00+00:00",
+      "url": "https://qiita.com/Qiita/items/c686397e4a0f4f11683d",
       "user": {
         "id": "qiita",
         "name": "Qiita キータ",
