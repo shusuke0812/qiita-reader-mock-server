@@ -1,7 +1,4 @@
 import { useState, useEffect } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
 import './App.css'
 
 interface Item {
@@ -28,7 +25,7 @@ function App() {
     const fetchItems = async () => {
       try {
         const response = await fetch(
-          '/items?page=1&per_page=20&query=',
+          '/api/items?page=1&per_page=20&query=',
         );
         if (!response.ok) {
           throw new Error(`HTTP ${response.status}`);
